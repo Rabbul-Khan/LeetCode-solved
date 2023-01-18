@@ -5,10 +5,10 @@ const isAnagram = (s, t) => {
     return false;
   }
 
-  let sSorted = s.split("").sort().toString();
-  let tSorted = t.split("").sort().toString();
+  let sSorted = s.split("").sort().join("");
+  let tSorted = t.split("").sort().join("");
 
-  if (sSorted === tSorted.toString()) {
+  if (sSorted === tSorted) {
     return true;
   } else {
     return false;
